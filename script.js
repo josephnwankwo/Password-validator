@@ -38,7 +38,7 @@ main();
 
 function checkPasswordValue() {
   // Check if it is up to 8 characters minimum, if it is, change ✖ to ✔
-  if (userPassword.value.length === 8) {
+  if (userPassword.value.length >= 8) {
     lengthCloseSvg.classList.add("hidden");
     lengthCheckSvg.classList.remove("hidden");
   } else {
