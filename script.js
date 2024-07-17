@@ -16,7 +16,7 @@ const digitCloseSvg = document.getElementById("digit-close__svg");
 const digitCheckSvg = document.getElementById("digit-check__svg");
 
 /**
- * User inputs a password
+ * User inputs a password 
  * Check if it is up to 8 characters minimum, if it is, change ✖ to ✔
  * Check if it has one uppercase, if it has, change ✖ to ✔
  * Check if it has one lowercase, if it has, change ✖ to ✔
@@ -72,9 +72,4 @@ function checkPasswordValue() {
     digitCloseSvg.classList.remove("hidden");
     digitCheckSvg.classList.add("hidden");
   }
-
-  // Check if it has one symbol, if it has, change ✖ to ✔
-  //   if (userPassword.value.search(/[~!@#$%^&*()_+:|<>?]/)) {
-  //     alert("password is good");
-  //   }
 }
